@@ -1,0 +1,30 @@
+.div-principal {
+    height: 80vh;
+}
+
+.primeira-metade {
+    background-color: white;
+}
+
+.segunda-metade {
+ background-color: #10890E;
+}
+
+.botao {
+    background-color: #10890E;
+}
+
+.botao:hover {
+    background-color: #12c20f;
+}
+
+.input {
+    all: unset;
+    border-bottom: 2px solid #A6A6A6;
+    color: #A6A6A6;
+}
+
+.input::placeholder {
+    font-size: 20px;
+    font-weight: bold;
+}

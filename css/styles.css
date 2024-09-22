@@ -1,0 +1,39 @@
+.form-control {
+    border: none;
+    border-bottom: 2px solid #10890E;
+    border-radius: 0;
+  }
+
+  input.form-control {
+    padding-left: 40px;
+    height: 100%;
+  }
+  
+  .form-control:focus {
+    box-shadow: none;
+    border-bottom-color: #008000;
+    font-weight: bold;
+  }
+
+input::placeholder {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+label {
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 0.8;
+}
+  
+.botao {
+    width: 200px;
+    height: 60px;
+    border-radius: 15px;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
