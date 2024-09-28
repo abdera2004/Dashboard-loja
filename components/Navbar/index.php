@@ -17,7 +17,7 @@
             height: 100vh;
             background-color: #10890E;
             overflow-y: auto;
-            box-shadow: 5px 0 5px 8px rgba(0, 0, 0, 1);
+            box-shadow: 5px 0 5px 3px rgba(0, 0, 0, 1);
         }
 
         .conteudo-principal {
@@ -85,7 +85,7 @@
         <!-- Logo Section -->
         <div class="logo d-flex flex-column w-100 align-items-center justify-content-center mb-4 position-relative">
             <a href="../Home/index.php">
-                <i class="bi bi-shop" style="font-size: 100px; color: white;"></i>
+                <i class="bi bi-shop" style="font-size: 100px;"></i>
             </a>
         </div>
 
