@@ -1,10 +1,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
-    <script>
-        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-    </script>
     <style>
         body, html {
             margin: 0;
@@ -72,15 +68,15 @@
         }
 
         .bi-plus-lg:hover {
-            color: black;
+            color: #a6a6a6;
         }
 
         .bi-pencil-square:hover {
-            color: black
+            color: #a6a6a6;
         }
 
         .bi-trash-fill:hover {
-            color: black;
+            color: #a6a6a6;
         }
         
     </style>

@@ -20,12 +20,13 @@
         <div style="border-radius: 100%; height: 40px; width: 40px; background-color: #00C900; display: flex; justify-content: center; align-items: center;">
             <button
                 style="all: unset;"
-                data-bs-toggle="tooltip" data-bs-placement="right"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
                 data-bs-custom-class="custom-tooltip"
                 data-bs-title="Adicionar produto">
             
             <a href="adicionarproduto.php">
-                <i class="bi bi-plus-lg text-white"></i>
+                <i class="bi bi-plus-lg"></i>
             </a>
            </button> 
         </div>
