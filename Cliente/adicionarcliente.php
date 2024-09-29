@@ -12,24 +12,24 @@
 ?>
 <body class="d-flex flex-row p-0 align-items-center justify-content-center ">
     <div class="px-2 py-3 border border-2 border-black rounded col d-flex align-items-center">
-        <form class="container-fluid">
+        <form class="container-fluid" method="post" action="process.php">
           <h2 class="w-100 mb-4">INSERIR USUÁRIO</h2>
           <div class="w-100 d-inline-flex justify-content-between mb-5">
             <div class="mb-3 col me-5">
-              <input type="text" class="form-control p-0 pb-1" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nome">
+              <input required type="text" class="form-control p-0 pb-1" name="nomeUsuario" aria-describedby="emailHelp" placeholder="Nome">
             </div>
             <div class="mb-3 col">
-              <input type="email" class="form-control p-0 pb-1" id="exampleInputPassword1" placeholder="Email">
+              <input required type="email" class="form-control p-0 pb-1" name="emailUsuario" placeholder="Email">
             </div>
           </div>
           <div class="w-100 d-inline-flex">
             <div class="col" style="margin-bottom: 180px;">
-              <input type="date" class="form-control p-0 pb-1 fw-bold" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <input required type="date" class="form-control p-0 pb-1 fw-bold" name="dataNascUsuario" aria-describedby="emailHelp">
             </div>
           </div>
           <div class="w-100 d-inline-flex justify-content-between">
             <button type="submit" class="btn botao border border-1 border-black" style="background-color: #FF0000;"><a href="index.php" style="all: unset;">CANCELAR</a></button>
-            <button type="submit" class="btn botao border border-1 border-black" style="background-color: #00FF00;">CADASTRAR</button>
+            <button type="submit" name="acao" value="SALVAR" class="btn botao border border-1 border-black" style="background-color: #00FF00;">CADASTRAR</button>
           </div>
         </form>
     </div>
