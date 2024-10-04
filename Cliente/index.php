@@ -1,3 +1,8 @@
+<?php
+require_once '../Dao/UsuariosDao.php';
+require_once '../Model/Mensagem.php';
+$users = UsuariosDao::selectAll();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -33,22 +38,25 @@
     <table class="table border-bottom border-secondary-subtle text-center">
     <thead>
         <tr class="">
-        <th scope="col" class="col-1 fs-4">ID</th>
-        <th scope="col" class="col-2 fs-4">NOME</th>
-        <th scope="col" class="col-2 fs-4">E-MAIL</th>
-        <th scope="col" class="col-5 fs-4">DATA DE NASCIMENTO</th>
-        <th scope="col" class="col-1 fs-4">EDITAR</th>
-        <th scope="col" class="col-1 fs-4">EXCLUIR</th>
+            <th scope="col" class="col-1 fs-4">ID</th>
+            <th scope="col" class="col-2 fs-4">NOME</th>
+            <th scope="col" class="col-2 fs-4">E-MAIL</th>
+            <th scope="col" class="col-5 fs-4">DATA DE NASCIMENTO</th>
+            <th scope="col" class="col-1 fs-4">EDITAR</th>
+            <th scope="col" class="col-1 fs-4">EXCLUIR</th>
         </tr>
     </thead>
     <tbody style="font-size: 10px; font-weight: bold;">
+        <?php foreach ($users as $User) : ?>
         <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
+            <th scope="row"><?= $User['idUsuario']; ?></th>
+            <td><?= $User['nomeUsuario']; ?></td>
+            <td><?= $User['emailUsuario']; ?></td>
+            <td><?= $User['dataNascUsuario']; ?></td>
             <td class="d-flex justify-content-center">
                 <div style="border-radius: 100%; height: 40px; width: 40px; background-color: #C4C4C4; display: flex; justify-content: center; align-items: center;">
+                <input type="hidden" class="form-control" id="acao" name="acao" value="SELECTID">
+                <input type="hidden" class="form-control" id="id" name="id" value="<?= $User['idUsuario']?>">
                     <button type="button" style="all: unset;" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <i class="bi bi-pencil-square" style="font-size: 20px;"></i>    
                     </button>
@@ -56,12 +64,13 @@
             </td>
             <td class="text-center">
                 <div style="border-radius: 100%; height: 40px; width: 40px; background-color: #DA0000; display: inline-flex; justify-content: center; align-items: center;">
-                    <button type="button" style="all: unset;" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                    <button type="submit" value="DELETE" name="acao" style="all: unset;" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                         <i class="bi bi-trash-fill" style="font-size: 20px;"></i>    
                     </button>
                 </div>
             </td>
         </tr>
+        <?php endforeach; ?>
     </tbody>
     </table>
     </div>
@@ -86,21 +95,25 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form class="">
+        <?php foreach ($users as $User) : ?>
+        <form action="process.php" method="POST">
+            <input type="hidden" class="form-control" id="acao" name="acao" value="SELECTID">
+            <input type="hidden" class="form-control" id="id" name="id" value="<?= $User['idUsuario']?>">
             <div class="w-100 d-inline-flex justify-content-between mb-5">
                 <div class="col me-5">
-                    <input type="text" class="form-control p-0 pb-1" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nome">
+                    <input type="text" class="form-control p-0 pb-1" value="<?= $User['nomeUsuario']?>" aria-describedby="emailHelp" placeholder="Nome">
                 </div>
                 <div class="col">
-                    <input type="email" class="form-control p-0 pb-1" id="exampleInputPassword1" placeholder="Email">
+                    <input type="email" class="form-control p-0 pb-1" value="<?= $User['emailUsuario']?>" placeholder="Email">
                 </div>
             </div>
             <div class="w-100 d-inline-flex">
                 <div class="col" style="">
-                    <input type="date" class="form-control p-0 pb-1 fw-bold" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input type="date" class="form-control p-0 pb-1 fw-bold" value="<?= $User['dataNascUsuario']?>" aria-describedby="emailHelp">
                 </div>
             </div>
         </form>
+        <?php endforeach; ?>
       </div>
       <div class="modal-footer col-12 justify-content-between">
         <button type="button" class="btn botao border border-1 border-black" style="background-color: #FF0000;" data-bs-dismiss="modal">Cancelar</button>

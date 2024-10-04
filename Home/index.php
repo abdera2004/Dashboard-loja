@@ -1,3 +1,9 @@
+<?php
+require_once '../Dao/UsuariosDao.php';
+// Contar total de usuários cadastrados
+$totalUsuarios = UsuariosDao::getTotalClientes();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -18,7 +24,7 @@
         </div>
         <div class="conteudo-card col-4 pt-2">
             <b class="text-white fs-5">Total de clientes</b>
-            <b class="variavel-card fs-3">Faturamento total</b>
+            <b class="variavel-card fs-3"><?php echo $totalUsuarios; ?> </b>
         </div>
         <div class="conteudo-card col-4 pt-2">
             <b class="text-white fs-5">Pedidos a entregar </b>

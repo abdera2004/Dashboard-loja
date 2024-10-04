@@ -1,3 +1,5 @@
 Quando colocar a barra de navegação, colocar a margem junto, logo após o body.
 
 Para ter um faturamento e número de pedidos, é necessário criar uma área para o cliente, ou fazer as inserções manualmente no banco de dados.
+
+Fazer o editar e o excluir usuário funcionarem.
