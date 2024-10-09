@@ -37,3 +37,7 @@ label {
     align-items: center;
     justify-content: center;
 }
+
+.botao-editar:hover {
+  background-color: black;
+}

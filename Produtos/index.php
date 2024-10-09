@@ -17,15 +17,15 @@
             include '../components/Searchbar/index.php';
         ?>   
     <div class="d-flex col-12 justify-content-end">
-        <div style="border-radius: 100%; height: 40px; width: 40px; background-color: #00C900; display: flex; justify-content: center; align-items: center;">
+        <div class="botao-hover3" style="border-radius: 100%; height: 40px; width: 40px; display: flex; justify-content: center; align-items: center;">
             <button
+                class="w-100 h-100"
                 style="all: unset;"
                 data-bs-toggle="tooltip"
                 data-bs-placement="right"
                 data-bs-custom-class="custom-tooltip"
                 data-bs-title="Adicionar produto">
-            
-            <a href="adicionarproduto.php">
+            <a href="adicionarproduto.php" class="d-flex w-100 h-100 justify-content-center align-items-center">
                 <i class="bi bi-plus-lg"></i>
             </a>
            </button> 
@@ -51,15 +51,15 @@
             <td>@mdo</td>
             <td>oi</td>
             <td class="d-flex justify-content-center">
-                <div style="border-radius: 100%; height: 40px; width: 40px; background-color: #C4C4C4; display: flex; justify-content: center; align-items: center;">
-                    <button type="button" style="all: unset;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class="botao-hover" style="border-radius: 100%; height: 40px; width: 40px; display: flex; justify-content: center; align-items: center;">
+                    <button class="w-100 h-100" type="button" style="all: unset; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <i class="bi bi-pencil-square" style="font-size: 20px;"></i>    
                     </button>
                 </div>
             </td>
             <td class="text-center">
-                <div style="border-radius: 100%; height: 40px; width: 40px; background-color: #DA0000; display: inline-flex; justify-content: center; align-items: center;">
-                    <button type="button" style="all: unset;" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                <div class="botao-hover2" style="border-radius: 100%; height: 40px; width: 40px; display: inline-flex; justify-content: center; align-items: center;">
+                    <button class="w-100 h-100" type="button" style="all: unset; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                         <i class="bi bi-trash-fill" style="font-size: 20px;"></i>    
                     </button>
                 </div>

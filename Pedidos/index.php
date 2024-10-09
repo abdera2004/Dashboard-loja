@@ -35,22 +35,22 @@
             <td>Otto</td>
             <td>@mdo</td>
             <td class="d-flex justify-content-center">
-                <div style="border-radius: 100%; height: 40px; width: 40px; background-color: #443E3E; display: flex; justify-content: center; align-items: center;">
+                <div class="botao-hover4" style="border-radius: 100%; height: 40px; width: 40px; display: flex; justify-content: center; align-items: center;">
                     <a href="itensdopedido.php">
                         <i class="bi bi-eye-fill" style="font-size: 25px;"></i>
                     </a>
                 </div>
             </td>
             <td class="text-center">
-                <div style="border-radius: 100%; height: 40px; width: 40px; background-color: #C4C4C4; display: inline-flex; justify-content: center; align-items: center;">
-                    <button type="button" style="all: unset;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class="botao-hover" style="border-radius: 100%; height: 40px; width: 40px; display: inline-flex; justify-content: center; align-items: center;">
+                    <button class="w-100 h-100" type="button" style="all: unset; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <i class="bi bi-pencil-square" style="font-size: 20px;"></i>    
                     </button>
                 </div>
             </td>
             <td class="text-center">
-                <div style="border-radius: 100%; height: 40px; width: 40px; background-color: #DA0000; display: inline-flex; justify-content: center; align-items: center;">
-                    <button type="button" style="all: unset;" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                <div class="botao-hover2" style="border-radius: 100%; height: 40px; width: 40px; display: inline-flex; justify-content: center; align-items: center;">
+                    <button type="button" style="all: unset; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                         <i class="bi bi-trash-fill" style="font-size: 20px;"></i>    
                     </button>
                 </div>

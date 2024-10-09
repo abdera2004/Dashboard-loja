@@ -22,14 +22,14 @@ $users = UsuariosDao::selectAll();
             include '../components/Searchbar/index.php';
         ?>   
     <div class="d-flex col-12 justify-content-end">
-        <div style="border-radius: 100%; height: 40px; width: 40px; background-color: #00C900; display: flex; justify-content: center; align-items: center;">
+        <div class="botao-hover3" style="border-radius: 100%; height: 40px; width: 40px; display: flex; justify-content: center; align-items: center;">
             <button
-                class=""
-                style="all: unset;"
+                class="w-100 h-100"
+                style="all: unset; cursor: pointer;"
                 data-bs-toggle="tooltip" data-bs-placement="right"
                 data-bs-custom-class="custom-tooltip"
                 data-bs-title="Adicionar cliente">
-            <a href="adicionarcliente.php">
+            <a href="adicionarcliente.php" class="d-flex w-100 h-100 justify-content-center align-items-center">
                 <i class="bi bi-plus-lg"></i>    
             </a>
            </button> 
@@ -54,17 +54,17 @@ $users = UsuariosDao::selectAll();
             <td><?= $User['emailUsuario']; ?></td>
             <td><?= $User['dataNascUsuario']; ?></td>
             <td class="d-flex justify-content-center">
-                <div style="border-radius: 100%; height: 40px; width: 40px; background-color: #C4C4C4; display: flex; justify-content: center; align-items: center;">
+                <div class="botao-hover" style="border-radius: 100%; height: 40px; width: 40px; display: flex; justify-content: center; align-items: center;">
                 <input type="hidden" class="form-control" id="acao" name="acao" value="SELECTID">
                 <input type="hidden" class="form-control" id="id" name="id" value="<?= $User['idUsuario']?>">
-                    <button type="button" style="all: unset;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button class="w-100 h-100" type="button" style="all: unset; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <i class="bi bi-pencil-square" style="font-size: 20px;"></i>    
                     </button>
                 </div>
             </td>
             <td class="text-center">
-                <div style="border-radius: 100%; height: 40px; width: 40px; background-color: #DA0000; display: inline-flex; justify-content: center; align-items: center;">
-                    <button type="submit" value="DELETE" name="acao" style="all: unset;" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                <div class="botao-hover2" style="border-radius: 100%; height: 40px; width: 40px; display: inline-flex; justify-content: center; align-items: center;">
+                    <button class="w-100 h-100" type="submit" value="DELETE" name="acao" style="all: unset; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                         <i class="bi bi-trash-fill" style="font-size: 20px;"></i>    
                     </button>
                 </div>

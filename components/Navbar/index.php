@@ -40,12 +40,6 @@
             color: white;
         }
 
-        i:hover {
-            transition: 0.5s;
-            color: #c4c4c4;
-            cursor: pointer;
-        }
-
         a {
             color: white;
             all: unset; /* Remove underline from links */
@@ -67,18 +61,42 @@
             color: white;
         }
 
-        .bi-plus-lg:hover {
-            color: #a6a6a6;
+        .botao-hover {
+            background-color: gray;
         }
 
-        .bi-pencil-square:hover {
-            color: #a6a6a6;
+        .botao-hover:hover {
+            background-color: #c8c8c8;
+            transition: 0.5s;
         }
 
-        .bi-trash-fill:hover {
-            color: #a6a6a6;
+        .botao-hover2 {
+            background-color: #b00b0b;
         }
-        
+
+        .botao-hover2:hover {
+            background-color: #FF0000;
+            transition: 0.5s;
+        }
+
+        .botao-hover3 {
+            background-color: #00C900;
+        }
+
+        .botao-hover3:hover {
+            background-color: #09ff00;
+            transition: 0.5s;
+        }
+
+        .botao-hover4 {
+            background-color: #443E3E;
+        }
+
+        .botao-hover4:hover {
+            background-color: #c4c4c4;
+            transition: 0.5s;
+        }
+
     </style>
     <!-- Barra de Navegação -->
     <div class="corpo col-2 d-flex flex-column align-items-start position-relative" style="height: 100vh; overflow: hidden;">
