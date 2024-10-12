@@ -30,7 +30,7 @@ $users = UsuariosDao::selectAll();
                 data-bs-custom-class="custom-tooltip"
                 data-bs-title="Adicionar cliente">
             <a href="adicionarcliente.php" class="d-flex w-100 h-100 justify-content-center align-items-center">
-                <i class="bi bi-plus-lg"></i>    
+                <i class="bi bi-plus-lg text-white"></i>    
             </a>
            </button> 
         </div>

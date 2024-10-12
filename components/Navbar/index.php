@@ -41,15 +41,7 @@
         }
 
         a {
-            color: white;
             all: unset; /* Remove underline from links */
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        a:hover {
-            transition: 0.5s;
-            color: #c4c4c4;
             cursor: pointer;
         }
 
@@ -97,6 +89,36 @@
             transition: 0.5s;
         }
 
+        .bi-person-circle:hover {
+            transition: 0.5s;
+            color: #c4c4c4;
+        }
+
+        .bi-shop:hover {
+            transition: 0.5s;
+            color: #c4c4c4;
+        }
+
+        .icone-e-texto {
+            display: flex;
+            align-items: center;
+            color: white; /* Cor inicial para o ícone e o texto */
+            text-decoration: none; /* Remover sublinhado */
+            transition: color 0.5s ease; /* Transição suave para a cor */
+        }
+
+        .icone-e-texto:hover{
+            color: #c4c4c4; /* Cor que ícone e texto terão ao passar o mouse */
+        }
+
+        .icone-e-texto i {
+            font-size: 40px; /* Definir o tamanho do ícone */
+        }
+
+        .texto-menu {
+            font-weight: bold; /* Garantir que o texto esteja em negrito */
+        }
+
     </style>
     <!-- Barra de Navegação -->
     <div class="corpo col-2 d-flex flex-column align-items-start position-relative" style="height: 100vh; overflow: hidden;">
@@ -109,21 +131,21 @@
 
         <!-- Menu Items -->
         <div class="d-flex flex-column align-items-center w-100 ms-5">
-            <div class="tamanho-menu d-flex flex-row align-items-center justify-content-start w-100 ">
-                <a href="../Cliente/index.php">
-                    <i class="bi bi-person-fill" style="font-size: 40px;"></i>
+            <div class="tamanho-menu d-flex flex-row align-items-center justify-content-start w-100">
+                <a href="../Cliente/index.php" class="icone-e-texto">
+                    <i class="bi bi-person-fill"></i>
                     <b class="ps-2 texto-menu">Clientes</b>
                 </a>
             </div>
-            <div class="tamanho-menu d-flex flex-row align-items-center justify-content-start w-100 ">
-                <a href="../Produtos/index.php">
-                    <i class="bi bi-archive-fill" style="font-size: 40px;"></i>
+            <div class="tamanho-menu d-flex flex-row align-items-center justify-content-start w-100">
+                <a href="../Produtos/index.php" class="icone-e-texto">
+                    <i class="bi bi-archive-fill"></i>
                     <b class="ps-2 texto-menu">Produtos</b>
                 </a>
             </div>
-            <div class="tamanho-menu d-flex flex-row align-items-center justify-content-start w-100 ">
-                <a href="../Pedidos/index.php">
-                    <i class="bi bi-folder-symlink-fill" style="font-size: 40px;"></i>
+            <div class="tamanho-menu d-flex flex-row align-items-center justify-content-start w-100">
+                <a href="../Pedidos/index.php" class="icone-e-texto">
+                    <i class="bi bi-folder-symlink-fill"></i>
                     <b class="ps-2 texto-menu">Pedidos</b>
                 </a>
             </div>
@@ -133,7 +155,7 @@
         <div class="mt-auto w-100 d-flex justify-content-center">
             <div class="dropdown">
                 <button class="dropdown-toggle bg-transparent border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="bi bi-person-circle" style="font-size: 100px; color: white;"></i>
+                    <i class="bi bi-person-circle" style="font-size: 100px;"></i>
                 </button>
                 <ul class="dropdown-menu rounded border border-black">
                     <li><a class="dropdown-item fw-bold" href="../Adm/index.php">Perfil</a></li>

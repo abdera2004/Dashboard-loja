@@ -37,7 +37,7 @@
             <td class="d-flex justify-content-center">
                 <div class="botao-hover4" style="border-radius: 100%; height: 40px; width: 40px; display: flex; justify-content: center; align-items: center;">
                     <a href="itensdopedido.php">
-                        <i class="bi bi-eye-fill" style="font-size: 25px;"></i>
+                        <i class="bi bi-eye-fill text-white" style="font-size: 25px;"></i>
                     </a>
                 </div>
             </td>
