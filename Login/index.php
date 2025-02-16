@@ -12,7 +12,7 @@
         <div class="col-8 div-principal border border-black border-3 rounded d-flex flex-row">
             <div class="primeira-metade col-6 d-flex justify-content-center align-items-center flex-column">
                 <h3 class="fw-bold text-black mb-5">Login</h3>
-                <form>
+                <form class="col-10">
                     <div class="d-flex flex-column row-gap-5">
                         <input type="text" class="input input-group" placeholder="E-mail">
                         <input type="text" class="input input-group" placeholder="Senha">
@@ -21,10 +21,12 @@
                         <input type="radio" class="form-check-input rounded">
                         <b class="text-black">Lembre-se de mim</b>
                     </div>
-                    <button type="submit" class="btn botao col-12 text-white fw-bold fs-3 rounded-4"><a style="all: unset;" href="../Home/index.php">Entrar</a></button>
+                    <button type="submit" class="p-0 btn botao col-12 text-white fw-bold fs-3 rounded-4">
+                        <a style="all: unset; display: block; width: 100%; height: 100%;" href="../Home/index.php">Entrar</a>
+                    </button>
             </div>
             <div class="segunda-metade col-6 d-flex justify-content-center align-items-center">
-                <img class="img-fluid" src="../img/logo.png">
+                <img class="img-fluid imagem" src="../img/logo.png">
             </div>
         </div>
     </div>
